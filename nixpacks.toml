@@ -1,32 +1,19 @@
 [phases.setup]
-nixPkgs = ['php82', 'php82Packages.composer', 'nodejs_20']
+nixPkgs = ['php83', 'php83Packages.composer', 'nodejs_20']
 
 [phases.install]
-cmds = ['composer install --no-dev --optimize-autoloader', 'npm ci', 'npm run build']
+cmds = [
+  'composer install --no-dev --optimize-autoloader --no-scripts --no-interaction',
+  'npm ci --legacy-peer-deps',
+  'npm run build'
+]
 
 [phases.build]
-cmds = ['php artisan config:cache', 'php artisan route:cache', 'php artisan view:cache']
+cmds = [
+  'php artisan config:cache',
+  'php artisan route:cache',
+  'php artisan view:cache'
+]
 
 [start]
 cmd = 'php artisan serve --host=0.0.0.0 --port=$PORT'
-```
-
-#### **C. Update `.gitignore`**
-
-Make sure your `.gitignore` includes:
-```
-/node_modules
-/public/hot
-/public/build
-/public/storage
-/storage/*.key
-/vendor
-.env
-.env.backup
-.env.production
-.phpunit.result.cache
-Homestead.json
-Homestead.yaml
-auth.json
-npm-debug.log
-yarn-error.log
