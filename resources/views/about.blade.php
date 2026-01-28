@@ -20,26 +20,26 @@
 
     <!-- Personal Info -->
     <section class="mb-20">
-        <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-start md:items-center">
             <div>
-                <p class="text-lg text-gray-600 mb-6">
+                <p class="text-base md:text-lg text-gray-600 mb-6">
                     I'm a dedicated IT student with a passion for web development and data analytics. Currently pursuing my degree and actively seeking OJT opportunities to gain hands-on experience in the industry.
                 </p>
-                <p class="text-lg text-gray-600 mb-6">
+                <p class="text-base md:text-lg text-gray-600 mb-6">
                     My journey in technology started with a curiosity about how things work, which has evolved into a commitment to building efficient, user-friendly applications.
                 </p>
                 <div class="space-y-3">
-                    <div class="flex items-center">
-                        <span class="font-semibold w-32">Location:</span>
-                        <span class="text-gray-600">#26 Rd. 5 Acacia St. Taguig City, Philippines</span>
+                    <div class="flex flex-col sm:flex-row sm:items-center">
+                        <span class="font-semibold w-full sm:w-32 text-sm md:text-base">Location:</span>
+                        <span class="text-gray-600 text-sm md:text-base break-words">#26 Rd. 5 Acacia St. Taguig City, Philippines</span>
                     </div>
-                    <div class="flex items-center">
-                        <span class="font-semibold w-32">Email:</span>
-                        <span class="text-gray-600">joshuavidalpupstudent@gmail.com</span>
+                    <div class="flex flex-col sm:flex-row sm:items-center">
+                        <span class="font-semibold w-full sm:w-32 text-sm md:text-base">Email:</span>
+                        <span class="text-gray-600 text-sm md:text-base break-all">joshuavidalpupstudent@gmail.com</span>
                     </div>
-                    <div class="flex items-center">
-                        <span class="font-semibold w-32">Phone:</span>
-                        <span class="text-gray-600">+63 961 702 9780</span>
+                    <div class="flex flex-col sm:flex-row sm:items-center">
+                        <span class="font-semibold w-full sm:w-32 text-sm md:text-base">Phone:</span>
+                        <span class="text-gray-600 text-sm md:text-base">+63 961 702 9780</span>
                     </div>
                 </div>
             </div>
@@ -226,8 +226,8 @@
 
     <!-- Certifications -->
     <section>
-        <h2 class="text-4xl font-bold text-accent mb-8">Certifications & Achievements</h2>
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-accent mb-8 text-center md:text-left">Certifications & Achievements</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
                 <div class="flex items-center gap-3 mb-3">
                     <div class="w-10 h-10 bg-yellow-100 rounded-full flex items-center justify-center">

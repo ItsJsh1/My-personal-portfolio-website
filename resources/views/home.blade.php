@@ -10,8 +10,8 @@
     
     <!-- Modal Content -->
     <div class="relative bg-white rounded-2xl shadow-2xl max-w-lg w-full max-h-[calc(100vh-4rem)] overflow-y-auto p-6 md:p-8 transform animate-fadeIn">
-        <!-- Icon -->
-        <div class="w-20 h-20 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-6">
+        <!-- Icon - Hidden on mobile, shown on desktop -->
+        <div class="hidden md:flex w-20 h-20 bg-accent/10 rounded-full items-center justify-center mx-auto mb-6">
             <svg class="w-10 h-10 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
             </svg>
