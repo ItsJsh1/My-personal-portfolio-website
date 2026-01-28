@@ -43,26 +43,26 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+            <div class="bg-white p-6 md:p-8 rounded-xl shadow-lg border border-gray-100">
                 <h3 class="text-2xl font-bold text-primary mb-6">Skills</h3>
-                <div class="grid grid-cols-2 gap-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-4">
                     <div>
                         <h4 class="font-semibold text-gray-700 mb-3">Languages & Frameworks</h4>
                         <ul class="space-y-2">
-                            <li class="flex items-center gap-2 text-gray-600">
-                                <span class="w-2 h-2 bg-accent rounded-full"></span>
+                            <li class="flex items-center gap-2 text-gray-600 text-sm md:text-base">
+                                <span class="w-2 h-2 bg-accent rounded-full flex-shrink-0"></span>
                                 PHP & Laravel
                             </li>
-                            <li class="flex items-center gap-2 text-gray-600">
-                                <span class="w-2 h-2 bg-accent rounded-full"></span>
+                            <li class="flex items-center gap-2 text-gray-600 text-sm md:text-base">
+                                <span class="w-2 h-2 bg-accent rounded-full flex-shrink-0"></span>
                                 JavaScript & React.js
                             </li>
-                            <li class="flex items-center gap-2 text-gray-600">
-                                <span class="w-2 h-2 bg-accent rounded-full"></span>
+                            <li class="flex items-center gap-2 text-gray-600 text-sm md:text-base">
+                                <span class="w-2 h-2 bg-accent rounded-full flex-shrink-0"></span>
                                 Tailwind CSS / Bootstrap
                             </li>
-                            <li class="flex items-center gap-2 text-gray-600">
-                                <span class="w-2 h-2 bg-accent rounded-full"></span>
+                            <li class="flex items-center gap-2 text-gray-600 text-sm md:text-base">
+                                <span class="w-2 h-2 bg-accent rounded-full flex-shrink-0"></span>
                                 C++ & Java
                             </li>
                         </ul>
@@ -70,20 +70,20 @@
                     <div>
                         <h4 class="font-semibold text-gray-700 mb-3">Tools & Technologies</h4>
                         <ul class="space-y-2">
-                            <li class="flex items-center gap-2 text-gray-600">
-                                <span class="w-2 h-2 bg-primary rounded-full"></span>
+                            <li class="flex items-center gap-2 text-gray-600 text-sm md:text-base">
+                                <span class="w-2 h-2 bg-primary rounded-full flex-shrink-0"></span>
                                 MySQL Database
                             </li>
-                            <li class="flex items-center gap-2 text-gray-600">
-                                <span class="w-2 h-2 bg-primary rounded-full"></span>
+                            <li class="flex items-center gap-2 text-gray-600 text-sm md:text-base">
+                                <span class="w-2 h-2 bg-primary rounded-full flex-shrink-0"></span>
                                 Git & GitHub
                             </li>
-                            <li class="flex items-center gap-2 text-gray-600">
-                                <span class="w-2 h-2 bg-primary rounded-full"></span>
+                            <li class="flex items-center gap-2 text-gray-600 text-sm md:text-base">
+                                <span class="w-2 h-2 bg-primary rounded-full flex-shrink-0"></span>
                                 VS Code
                             </li>
-                            <li class="flex items-center gap-2 text-gray-600">
-                                <span class="w-2 h-2 bg-primary rounded-full"></span>
+                            <li class="flex items-center gap-2 text-gray-600 text-sm md:text-base">
+                                <span class="w-2 h-2 bg-primary rounded-full flex-shrink-0"></span>
                                 Figma
                             </li>
                         </ul>

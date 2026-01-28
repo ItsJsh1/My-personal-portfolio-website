@@ -115,7 +115,7 @@
                 </div>
 
                 <!-- Academic Projects -->
-                <div class="relative group">
+                <div class="relative mb-12 group">
                     <div class="flex flex-col md:flex-row items-start">
                         <!-- Timeline Dot -->
                         <div class="absolute left-4 md:left-1/2 transform -translate-x-1/2 z-10">

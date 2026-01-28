@@ -3,7 +3,7 @@
 @section('title', 'Contact Me')
 
 @section('content')
-<div class="max-w-4xl mx-auto px-4 py-20">
+<div class="max-w-4xl mx-auto px-4 py-20 min-h-[calc(100vh-theme(spacing.24)-theme(spacing.20))]">
     <h2 class="text-4xl font-bold text-primary mb-4">Get In Touch</h2>
     <p class="text-gray-600 mb-12">I'm currently looking for OJT opportunities. Feel free to reach out!</p>
 

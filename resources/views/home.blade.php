@@ -4,12 +4,12 @@
 
 @section('content')
 <!-- Privacy Notice Modal -->
-<div id="privacyModal" class="fixed inset-0 z-[100] flex items-center justify-center p-4">
+<div id="privacyModal" class="fixed inset-0 z-[100] flex items-center justify-center p-4 py-8 md:py-4">
     <!-- Backdrop -->
     <div class="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
     
     <!-- Modal Content -->
-    <div class="relative bg-white rounded-2xl shadow-2xl max-w-lg w-full p-8 transform animate-fadeIn">
+    <div class="relative bg-white rounded-2xl shadow-2xl max-w-lg w-full max-h-[calc(100vh-4rem)] overflow-y-auto p-6 md:p-8 transform animate-fadeIn">
         <!-- Icon -->
         <div class="w-20 h-20 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-6">
             <svg class="w-10 h-10 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
