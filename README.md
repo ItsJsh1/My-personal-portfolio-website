@@ -1,3 +1,66 @@
+# Portfolio Website
+
+A professional portfolio website built with Laravel and Tailwind CSS for showcasing my projects, skills, and experience.
+
+## 🚀 Features
+
+- Responsive design
+- Modern UI with Tailwind CSS
+- Project showcase
+- About me section with education timeline
+- Contact information
+- Static content (no database required)
+
+## 🛠️ Technologies Used
+
+- **Backend**: Laravel 11
+- **Frontend**: Tailwind CSS, JavaScript
+- **Build Tool**: Vite
+- **Version Control**: Git
+
+## 📦 Installation
+```bash
+# Clone the repository
+git clone https://github.com/ItsJsh1/portfolio-website.git
+
+# Navigate to project directory
+cd portfolio-website
+
+# Install PHP dependencies
+composer install
+
+# Install Node dependencies
+npm install
+
+# Copy environment file
+cp .env.example .env
+
+# Generate application key
+php artisan key:generate
+
+# Build assets
+npm run build
+
+# Start development server
+php artisan serve
+```
+
+## 🌐 Live Demo
+
+Coming soon! (Add your Hostinger URL when deployed)
+
+## 📧 Contact
+
+- **Email**: joshuavidalpupstudent@gmail.com
+- **LinkedIn**: https://www.linkedin.com/in/joshua-f-vidal
+- **GitHub**: https://github.com/ItsJsh1
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
