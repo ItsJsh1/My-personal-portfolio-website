@@ -3,15 +3,19 @@ nixPkgs = ['php83', 'php83Packages.composer', 'nodejs_20']
 
 [phases.install]
 cmds = [
-  'composer install --no-dev --optimize-autoloader --ignore-platform-reqs',
-  'npm ci',
-  'npm run build'
+  'composer install --no-dev --optimize-autoloader --ignore-platform-reqs'
 ]
 
 [phases.build]
 cmds = [
-  'php artisan optimize',
-  'chmod -R 755 storage bootstrap/cache'
+  'npm install',
+  'npm run build',
+  'ls -la public/build',
+  'cat public/build/manifest.json || echo "Manifest not found"',
+  'mkdir -p storage/framework/{sessions,views,cache/data}',
+  'mkdir -p storage/logs',
+  'mkdir -p bootstrap/cache',
+  'chmod -R 777 storage bootstrap/cache'
 ]
 
 [start]
