@@ -19,29 +19,49 @@
             <div class="relative group">
                 <div class="aspect-[8.5/11] bg-gray-100 flex items-center justify-center overflow-hidden">
                     @if(file_exists(public_path('documents/cv.pdf')))
-                        <!-- PDF Preview using iframe for thumbnail - Blurred for privacy -->
-                        <div class="relative w-full h-full">
-                            <iframe 
-                                src="{{ asset('documents/cv.pdf') }}#toolbar=0&navpanes=0&scrollbar=0" 
-                                class="w-full h-full pointer-events-none blur-sm"
-                                title="CV Preview"
-                            ></iframe>
-                            <!-- Gradient overlay -->
-                            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-white/30 to-white/50 pointer-events-none"></div>
+                        <!-- CV Preview - Using a visual representation instead of iframe -->
+                        <div class="relative w-full h-full bg-gradient-to-br from-gray-50 to-gray-200">
+                            <!-- Simulated document preview background -->
+                            <div class="absolute inset-4 md:inset-8 bg-white rounded-lg shadow-inner border border-gray-200 overflow-hidden">
+                                <!-- Blurred placeholder lines to simulate document -->
+                                <div class="p-4 md:p-8 space-y-3 md:space-y-4 blur-sm">
+                                    <div class="h-6 md:h-8 bg-gray-300 rounded w-1/2 mx-auto"></div>
+                                    <div class="h-3 md:h-4 bg-gray-200 rounded w-3/4 mx-auto"></div>
+                                    <div class="h-3 md:h-4 bg-gray-200 rounded w-2/3 mx-auto"></div>
+                                    <div class="mt-4 md:mt-6 space-y-2">
+                                        <div class="h-2 md:h-3 bg-gray-200 rounded w-full"></div>
+                                        <div class="h-2 md:h-3 bg-gray-200 rounded w-5/6"></div>
+                                        <div class="h-2 md:h-3 bg-gray-200 rounded w-4/5"></div>
+                                        <div class="h-2 md:h-3 bg-gray-200 rounded w-full"></div>
+                                        <div class="h-2 md:h-3 bg-gray-200 rounded w-3/4"></div>
+                                    </div>
+                                    <div class="mt-4 md:mt-6 space-y-2">
+                                        <div class="h-4 md:h-5 bg-gray-300 rounded w-1/3"></div>
+                                        <div class="h-2 md:h-3 bg-gray-200 rounded w-full"></div>
+                                        <div class="h-2 md:h-3 bg-gray-200 rounded w-5/6"></div>
+                                        <div class="h-2 md:h-3 bg-gray-200 rounded w-4/5"></div>
+                                    </div>
+                                    <div class="mt-4 md:mt-6 space-y-2">
+                                        <div class="h-4 md:h-5 bg-gray-300 rounded w-1/4"></div>
+                                        <div class="h-2 md:h-3 bg-gray-200 rounded w-full"></div>
+                                        <div class="h-2 md:h-3 bg-gray-200 rounded w-2/3"></div>
+                                    </div>
+                                </div>
+                            </div>
                             <!-- Privacy Note - Always visible -->
-                            <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
-                                <div class="bg-white/95 backdrop-blur-md px-8 py-6 rounded-2xl shadow-2xl text-center max-w-md mx-4 border border-gray-100">
-                                    <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                                        <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="bg-white/95 backdrop-blur-md px-6 md:px-8 py-4 md:py-6 rounded-2xl shadow-2xl text-center max-w-sm md:max-w-md mx-4 border border-gray-100">
+                                    <div class="w-12 h-12 md:w-16 md:h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-3 md:mb-4">
+                                        <svg class="w-6 h-6 md:w-8 md:h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
                                         </svg>
                                     </div>
-                                    <h4 class="text-xl font-bold text-primary mb-2">Privacy Protected</h4>
-                                    <p class="text-gray-600 text-sm mb-4">
+                                    <h4 class="text-lg md:text-xl font-bold text-primary mb-2">Privacy Protected</h4>
+                                    <p class="text-gray-600 text-xs md:text-sm mb-3 md:mb-4">
                                         My CV is intentionally blurred to protect my personal information. 
-                                        Please click <strong>"View CV in New Tab"</strong> or <strong>"Download CV"</strong> below to access the complete document.
+                                        Please click <strong>"View my CV"</strong> or <strong>"Download my CV"</strong> below to access the complete document.
                                     </p>
-                                    <p class="text-accent text-sm font-medium">Thank you for understanding! 🙏</p>
+                                    <p class="text-accent text-xs md:text-sm font-medium">Thank you for understanding! 🙏</p>
                                 </div>
                             </div>
                         </div>

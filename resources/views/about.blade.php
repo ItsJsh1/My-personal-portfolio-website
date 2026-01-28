@@ -95,13 +95,15 @@
 
     <!-- Education Timeline -->
     <section class="mb-20">
-        <h2 class="text-4xl font-bold text-accent mb-12">Education</h2>
+        <h2 class="text-4xl font-bold text-accent mb-12 text-center md:text-left">Education</h2>
         <div class="relative">
-            <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gray-300"></div>
+            <!-- Timeline line - left on mobile, center on desktop -->
+            <div class="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 h-full w-0.5 bg-gray-300"></div>
             
             <!-- Timeline Item - PUP -->
-            <div class="mb-12 flex items-center w-full">
-                <div class="w-1/2 pr-8 text-right">
+            <div class="mb-12 flex flex-col md:flex-row md:items-center w-full">
+                <!-- Desktop: Left content -->
+                <div class="hidden md:block md:w-1/2 md:pr-8 md:text-right">
                     <div class="flex items-center justify-end gap-3 mb-2">
                         <div>
                             <h3 class="text-xl font-bold text-primary">Bachelor of Science in Information Technology</h3>
@@ -113,32 +115,61 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-8 h-8 bg-accent rounded-full z-10 flex-shrink-0"></div>
-                <div class="w-1/2 pl-8">
-                    <p class="text-gray-600">Currently pursuing my degree with a focus on web development and software engineering. Maintaining a strong academic record while actively searching in programming related OJT.</p>
+                <!-- Timeline dot -->
+                <div class="absolute left-4 md:static md:left-auto transform -translate-x-1/2 md:translate-x-0 w-8 h-8 bg-accent rounded-full z-10 flex-shrink-0"></div>
+                <!-- Mobile & Desktop: Right content -->
+                <div class="ml-12 md:ml-0 md:w-1/2 md:pl-8">
+                    <!-- Mobile only: Title -->
+                    <div class="md:hidden mb-3">
+                        <div class="flex items-center gap-3 mb-2">
+                            <div class="w-12 h-12 bg-white rounded-lg shadow-md flex items-center justify-center flex-shrink-0 border border-gray-100">
+                                <img src="{{ asset('images/logo.png') }}" alt="PUP Logo" class="w-8 h-8 object-contain">
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-primary">Bachelor of Science in Information Technology</h3>
+                                <p class="text-sm text-gray-600">PUP - Taguig Campus</p>
+                                <p class="text-xs text-gray-500">2022 - Present</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 text-sm md:text-base">Currently pursuing my degree with a focus on web development and software engineering. Maintaining a strong academic record while actively searching in programming related OJT.</p>
                 </div>
             </div>
 
             <!-- Timeline Item - Athens -->
-            <div class="mb-12 flex items-center w-full">
-                <div class="w-1/2 pr-8 text-right">
+            <div class="mb-12 flex flex-col md:flex-row md:items-center w-full">
+                <!-- Desktop: Left content -->
+                <div class="hidden md:block md:w-1/2 md:pr-8 md:text-right">
                     <p class="text-gray-600">Completed senior high school with a strand in Information and Communications Technology. Developed foundational programming skills and web development knowledge.</p>
                 </div>
-                <div class="w-8 h-8 bg-accent rounded-full z-10 flex-shrink-0"></div>
-                <div class="w-1/2 pl-8">
-                    <div class="flex items-center gap-3 mb-2">
-                        <div>
-                            <h3 class="text-xl font-bold text-primary">Technical Vocational Livelihood (TVL) - Programming</h3>
-                            <p class="text-gray-600">Athens Academy</p>
-                            <p class="text-sm text-gray-500">2020 - 2022</p>
+                <!-- Timeline dot -->
+                <div class="absolute left-4 md:static md:left-auto transform -translate-x-1/2 md:translate-x-0 w-8 h-8 bg-accent rounded-full z-10 flex-shrink-0"></div>
+                <!-- Mobile & Desktop: Right content -->
+                <div class="ml-12 md:ml-0 md:w-1/2 md:pl-8">
+                    <!-- Mobile only: Full card -->
+                    <div class="md:hidden mb-3">
+                        <h3 class="text-lg font-bold text-primary">TVL - Programming</h3>
+                        <p class="text-sm text-gray-600">Athens Academy</p>
+                        <p class="text-xs text-gray-500">2020 - 2022</p>
+                    </div>
+                    <p class="text-gray-600 text-sm md:text-base md:hidden">Completed senior high school with a strand in Information and Communications Technology. Developed foundational programming skills and web development knowledge.</p>
+                    <!-- Desktop only: Title -->
+                    <div class="hidden md:block">
+                        <div class="flex items-center gap-3 mb-2">
+                            <div>
+                                <h3 class="text-xl font-bold text-primary">Technical Vocational Livelihood (TVL) - Programming</h3>
+                                <p class="text-gray-600">Athens Academy</p>
+                                <p class="text-sm text-gray-500">2020 - 2022</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- Timeline Item - Luis Aguado HS -->
-            <div class="mb-12 flex items-center w-full">
-                <div class="w-1/2 pr-8 text-right">
+            <div class="mb-12 flex flex-col md:flex-row md:items-center w-full">
+                <!-- Desktop: Left content -->
+                <div class="hidden md:block md:w-1/2 md:pr-8 md:text-right">
                     <div class="flex items-center justify-end gap-3 mb-2">
                         <div>
                             <h3 class="text-xl font-bold text-primary">Technical Vocational Livelihood (TVL) - Electricity</h3>
@@ -147,24 +178,45 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-8 h-8 bg-accent rounded-full z-10 flex-shrink-0"></div>
-                <div class="w-1/2 pl-8">
-                    <p class="text-gray-600">Completed junior high school with a strand in Technical Vocational Livelihood focused on Electricity. Gained foundational knowledge in electrical systems and hands-on technical skills.</p>
+                <!-- Timeline dot -->
+                <div class="absolute left-4 md:static md:left-auto transform -translate-x-1/2 md:translate-x-0 w-8 h-8 bg-accent rounded-full z-10 flex-shrink-0"></div>
+                <!-- Mobile & Desktop: Right content -->
+                <div class="ml-12 md:ml-0 md:w-1/2 md:pl-8">
+                    <!-- Mobile only: Title -->
+                    <div class="md:hidden mb-3">
+                        <h3 class="text-lg font-bold text-primary">TVL - Electricity</h3>
+                        <p class="text-sm text-gray-600">Luis Aguado National Highschool</p>
+                        <p class="text-xs text-gray-500">2016 - 2020</p>
+                    </div>
+                    <p class="text-gray-600 text-sm md:text-base">Completed junior high school with a strand in Technical Vocational Livelihood focused on Electricity. Gained foundational knowledge in electrical systems and hands-on technical skills.</p>
                 </div>
             </div>
 
             <!-- Timeline Item - Luis Aguado Elementary -->
-            <div class="mb-12 flex items-center w-full">
-                <div class="w-1/2 pr-8 text-right">
+            <div class="mb-12 flex flex-col md:flex-row md:items-center w-full">
+                <!-- Desktop: Left content -->
+                <div class="hidden md:block md:w-1/2 md:pr-8 md:text-right">
                     <p class="text-gray-600">Completed elementary education with recognition as an achiever. Built strong foundational skills in academics and developed early interest in technology.</p>
                 </div>
-                <div class="w-8 h-8 bg-accent rounded-full z-10 flex-shrink-0"></div>
-                <div class="w-1/2 pl-8">
-                    <div class="flex items-center gap-3 mb-2">
-                        <div>
-                            <h3 class="text-xl font-bold text-primary">Achiever</h3>
-                            <p class="text-gray-600">Luis Aguado Elementary School</p>
-                            <p class="text-sm text-gray-500">2010 - 2016</p>
+                <!-- Timeline dot -->
+                <div class="absolute left-4 md:static md:left-auto transform -translate-x-1/2 md:translate-x-0 w-8 h-8 bg-accent rounded-full z-10 flex-shrink-0"></div>
+                <!-- Mobile & Desktop: Right content -->
+                <div class="ml-12 md:ml-0 md:w-1/2 md:pl-8">
+                    <!-- Mobile only: Full card -->
+                    <div class="md:hidden mb-3">
+                        <h3 class="text-lg font-bold text-primary">Achiever</h3>
+                        <p class="text-sm text-gray-600">Luis Aguado Elementary School</p>
+                        <p class="text-xs text-gray-500">2010 - 2016</p>
+                    </div>
+                    <p class="text-gray-600 text-sm md:text-base md:hidden">Completed elementary education with recognition as an achiever. Built strong foundational skills in academics and developed early interest in technology.</p>
+                    <!-- Desktop only: Title -->
+                    <div class="hidden md:block">
+                        <div class="flex items-center gap-3 mb-2">
+                            <div>
+                                <h3 class="text-xl font-bold text-primary">Achiever</h3>
+                                <p class="text-gray-600">Luis Aguado Elementary School</p>
+                                <p class="text-sm text-gray-500">2010 - 2016</p>
+                            </div>
                         </div>
                     </div>
                 </div>

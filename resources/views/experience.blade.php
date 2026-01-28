@@ -17,18 +17,18 @@
         <div class="max-w-4xl mx-auto">
             <!-- Timeline Line -->
             <div class="relative">
-                <div class="absolute left-8 md:left-1/2 transform md:-translate-x-1/2 h-full w-0.5 bg-gradient-to-b from-yellow-400 via-accent to-primary"></div>
+                <div class="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 h-full w-0.5 bg-gradient-to-b from-yellow-400 via-accent to-primary"></div>
 
                 <!-- Looking for OJT - TOP -->
                 <div class="relative mb-12 group">
                     <div class="flex flex-col md:flex-row items-start">
                         <!-- Timeline Dot with Animation -->
-                        <div class="absolute left-8 md:left-1/2 transform -translate-x-1/2 z-10">
+                        <div class="absolute left-4 md:left-1/2 transform -translate-x-1/2 z-10">
                             <div class="w-4 h-4 bg-yellow-400 rounded-full ring-4 ring-white shadow-lg animate-pulse"></div>
                         </div>
                         
                         <!-- Content Card -->
-                        <div class="ml-20 md:ml-0 md:w-1/2 md:pr-12 md:text-right">
+                        <div class="ml-10 md:ml-0 md:w-1/2 md:pr-12 md:text-right">
                             <div class="bg-gradient-to-br from-yellow-50 to-orange-50 p-6 rounded-xl shadow-md border-2 border-dashed border-yellow-300 hover:border-accent transition-all duration-300 transform hover:-translate-y-1">
                                 <div class="flex items-center gap-2 mb-3 md:justify-end">
                                     <span class="bg-yellow-100 text-yellow-700 text-xs font-semibold px-3 py-1 rounded-full animate-pulse">Seeking Opportunities</span>
@@ -54,12 +54,12 @@
                 <div class="relative mb-12 group">
                     <div class="flex flex-col md:flex-row items-start">
                         <!-- Timeline Dot -->
-                        <div class="absolute left-8 md:left-1/2 transform -translate-x-1/2 z-10">
+                        <div class="absolute left-4 md:left-1/2 transform -translate-x-1/2 z-10">
                             <div class="w-4 h-4 bg-accent rounded-full ring-4 ring-white shadow-lg group-hover:scale-125 transition-transform duration-300"></div>
                         </div>
                         
                         <!-- Content Card -->
-                        <div class="ml-20 md:ml-0 md:w-1/2 md:pl-12 md:ml-auto">
+                        <div class="ml-10 md:ml-0 md:w-1/2 md:pl-12 md:ml-auto">
                             <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border-l-4 border-accent">
                                 <div class="flex items-center gap-2 mb-3">
                                     <span class="bg-accent/10 text-accent text-xs font-semibold px-3 py-1 rounded-full">Current</span>
@@ -118,12 +118,12 @@
                 <div class="relative group">
                     <div class="flex flex-col md:flex-row items-start">
                         <!-- Timeline Dot -->
-                        <div class="absolute left-8 md:left-1/2 transform -translate-x-1/2 z-10">
+                        <div class="absolute left-4 md:left-1/2 transform -translate-x-1/2 z-10">
                             <div class="w-4 h-4 bg-primary rounded-full ring-4 ring-white shadow-lg group-hover:scale-125 transition-transform duration-300"></div>
                         </div>
                         
                         <!-- Content Card -->
-                        <div class="ml-20 md:ml-0 md:w-1/2 md:pr-12 md:text-right">
+                        <div class="ml-10 md:ml-0 md:w-1/2 md:pr-12 md:text-right">
                             <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border-l-4 border-primary">
                                 <div class="flex items-center gap-2 mb-3 md:justify-end">
                                     <span class="bg-accent/10 text-accent text-xs font-semibold px-3 py-1 rounded-full">Ended</span>
@@ -157,12 +157,12 @@
                 <div class="relative mb-12 group">
                     <div class="flex flex-col md:flex-row items-start">
                         <!-- Timeline Dot -->
-                        <div class="absolute left-8 md:left-1/2 transform -translate-x-1/2 z-10">
+                        <div class="absolute left-4 md:left-1/2 transform -translate-x-1/2 z-10">
                             <div class="w-4 h-4 bg-primary rounded-full ring-4 ring-white shadow-lg group-hover:scale-125 transition-transform duration-300"></div>
                         </div>
                         
                         <!-- Content Card -->
-                        <div class="ml-20 md:ml-0 md:w-1/2 md:pl-12 md:ml-auto">
+                        <div class="ml-10 md:ml-0 md:w-1/2 md:pl-12 md:ml-auto">
                             <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border-l-4 border-primary">
                                 <div class="flex items-center gap-2 mb-3">
                                     <span class="bg-accent/10 text-accent text-xs font-semibold px-3 py-1 rounded-full">Ended</span>
