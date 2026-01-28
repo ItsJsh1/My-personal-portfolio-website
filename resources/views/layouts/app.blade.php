@@ -28,7 +28,7 @@
 <body class="min-h-screen">
     <!-- Navigation -->
     <div class="fixed w-full top-5 z-50 px-4 sm:px-6 lg:px-8">
-        <nav class="bg-white shadow-md rounded-2xl max-w-7xl mx-auto relative overflow-hidden">
+        <nav class="bg-white shadow-md rounded-2xl max-w-7xl mx-auto relative">
             <!-- Progress Bar -->
             <div id="progress-bar" class="absolute bottom-0 left-0 h-1 bg-accent transition-all duration-150 rounded-bl-2xl" style="width: 0%"></div>
             <div class="px-4 sm:px-6 lg:px-8">
