@@ -67,53 +67,20 @@
                                 <h3 class="text-xl font-bold text-primary mb-1">Membership Information Management System for Radio Engineering Circle Inc.</h3>
                                 <p class="text-accent font-medium mb-2">Capstone Project</p>
                                 <p class="text-sm text-gray-500 mb-2">2024 - 2026</p>
-                                <div class="relative inline-block mb-4">
-                                    <button id="projectDropdownBtn" onclick="toggleProjectDropdown()" class="inline-flex items-center gap-1.5 text-sm text-accent transition-colors">
+                                <div class="flex flex-col sm:flex-row gap-2 mb-4">
+                                    <a href="https://beta.rec.org.ph" target="_blank" class="inline-flex items-center gap-1.5 text-sm text-accent hover:text-primary transition-colors">
                                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path>
                                         </svg>
-                                        View Project
-                                        <svg id="projectDropdownArrow" class="w-3 h-3 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                        beta.rec.org.ph
+                                    </a>
+                                    <a href="https://centralized-website.rec.org.ph" target="_blank" class="inline-flex items-center gap-1.5 text-sm text-accent hover:text-primary transition-colors">
+                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path>
                                         </svg>
-                                    </button>
-                                    <div id="projectDropdownMenu" class="hidden absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-100 py-2 z-20">
-                                        <a href="https://beta.rec.org.ph" target="_blank" class="flex items-center gap-2 px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors">
-                                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
-                                            </svg>
-                                            beta.rec.org.ph
-                                        </a>
-                                        <a href="https://centralized-website.rec.org.ph" target="_blank" class="flex items-center gap-2 px-4 py-2 text-sm text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors">
-                                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
-                                            </svg>
-                                            website.rec.org.ph
-                                        </a>
-                                    </div>
+                                        website.rec.org.ph
+                                    </a>
                                 </div>
-                                <script>
-                                    function toggleProjectDropdown() {
-                                        var menu = document.getElementById('projectDropdownMenu');
-                                        var arrow = document.getElementById('projectDropdownArrow');
-                                        if (menu.classList.contains('hidden')) {
-                                            menu.classList.remove('hidden');
-                                            arrow.classList.add('rotate-180');
-                                        } else {
-                                            menu.classList.add('hidden');
-                                            arrow.classList.remove('rotate-180');
-                                        }
-                                    }
-                                    document.addEventListener('click', function(e) {
-                                        var btn = document.getElementById('projectDropdownBtn');
-                                        var menu = document.getElementById('projectDropdownMenu');
-                                        var arrow = document.getElementById('projectDropdownArrow');
-                                        if (btn && menu && !btn.contains(e.target) && !menu.contains(e.target)) {
-                                            menu.classList.add('hidden');
-                                            arrow.classList.remove('rotate-180');
-                                        }
-                                    });
-                                </script>
                                 <p class="text-gray-600 text-sm leading-relaxed">
                                     In this capstone project, I served as a Front-End Developer, focusing on the <strong>UI/UX design</strong> of the system. 
                                     I developed the members’ landing page and designed both the <strong>Super Admin</strong> and <strong>Member-side interfaces.</strong> 
