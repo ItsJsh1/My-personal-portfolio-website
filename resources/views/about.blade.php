@@ -263,13 +263,21 @@
                 </div>
                 <p class="text-gray-600 text-sm mb-2">March 8, 2025</p>
                 <p class="text-gray-500 text-sm mb-3">Certificate of Participation</p>
-                <button @click="showCert = true" class="inline-flex items-center gap-1.5 text-sm text-accent hover:text-primary transition-colors font-medium">
+                <!-- Desktop: View Certificate -->
+                <button @click="showCert = true" class="hidden md:inline-flex items-center gap-1.5 text-sm text-accent hover:text-primary transition-colors font-medium">
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
                     </svg>
                     View Certificate
                 </button>
+                <!-- Mobile: Download Certificate -->
+                <a href="{{ asset('documents/certificates/cert3.png') }}" download="GIT_IT_TOGETHER_Certificate.png" class="inline-flex md:hidden items-center gap-1.5 text-sm text-accent hover:text-primary transition-colors font-medium">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                    </svg>
+                    Download Certificate
+                </a>
                 <!-- Modal -->
                 <div x-show="showCert" x-cloak class="fixed inset-0 z-[100] flex items-center justify-center p-4" @keydown.escape.window="showCert = false">
                     <div class="absolute inset-0 bg-black/70 backdrop-blur-sm" @click="showCert = false"></div>
@@ -299,13 +307,21 @@
                 </div>
                 <p class="text-gray-600 text-sm mb-2">March 3, 2025</p>
                 <p class="text-gray-500 text-sm mb-3">Certificate of Participation</p>
-                <button @click="showCert = true" class="inline-flex items-center gap-1.5 text-sm text-accent hover:text-primary transition-colors font-medium">
+                <!-- Desktop: View Certificate -->
+                <button @click="showCert = true" class="hidden md:inline-flex items-center gap-1.5 text-sm text-accent hover:text-primary transition-colors font-medium">
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
                     </svg>
                     View Certificate
                 </button>
+                <!-- Mobile: Download Certificate -->
+                <a href="{{ asset('documents/certificates/cert2.png') }}" download="LAUNCHPAD_Certificate.png" class="inline-flex md:hidden items-center gap-1.5 text-sm text-accent hover:text-primary transition-colors font-medium">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                    </svg>
+                    Download Certificate
+                </a>
                 <!-- Modal -->
                 <div x-show="showCert" x-cloak class="fixed inset-0 z-[100] flex items-center justify-center p-4" @keydown.escape.window="showCert = false">
                     <div class="absolute inset-0 bg-black/70 backdrop-blur-sm" @click="showCert = false"></div>
@@ -335,13 +351,21 @@
                 </div>
                 <p class="text-gray-600 text-sm mb-2">November 20, 2022</p>
                 <p class="text-gray-500 text-sm mb-3">Certificate of Participation</p>
-                <button @click="showCert = true" class="inline-flex items-center gap-1.5 text-sm text-accent hover:text-primary transition-colors font-medium">
+                <!-- Desktop: View Certificate -->
+                <button @click="showCert = true" class="hidden md:inline-flex items-center gap-1.5 text-sm text-accent hover:text-primary transition-colors font-medium">
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
                     </svg>
                     View Certificate
                 </button>
+                <!-- Mobile: Download Certificate -->
+                <a href="{{ asset('documents/certificates/cert1.png') }}" download="Glass_Is_Kool_Certificate.png" class="inline-flex md:hidden items-center gap-1.5 text-sm text-accent hover:text-primary transition-colors font-medium">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                    </svg>
+                    Download Certificate
+                </a>
                 <!-- Modal -->
                 <div x-show="showCert" x-cloak class="fixed inset-0 z-[100] flex items-center justify-center p-4" @keydown.escape.window="showCert = false">
                     <div class="absolute inset-0 bg-black/70 backdrop-blur-sm" @click="showCert = false"></div>
