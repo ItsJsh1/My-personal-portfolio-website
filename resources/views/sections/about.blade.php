@@ -26,40 +26,70 @@
                         My journey in technology started with a curiosity about how things work, which has evolved into a commitment to building efficient, user-friendly applications.
                     </p>
                     <div class="space-y-3">
-                        <div class="flex flex-col sm:flex-row sm:items-center">
-                            <span class="font-semibold w-full sm:w-32 text-sm md:text-base">Location:</span>
-                            <span class="text-gray-600 text-sm md:text-base break-words">#26 Rd. 5 Acacia St. Taguig City, Philippines</span>
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="font-semibold text-sm md:text-base block">Location</span>
+                                <span class="text-gray-600 text-sm md:text-base">#26 Rd. 5 Acacia St. Taguig City, Philippines</span>
+                            </div>
                         </div>
-                        <div class="flex flex-col sm:flex-row sm:items-center">
-                            <span class="font-semibold w-full sm:w-32 text-sm md:text-base">Email:</span>
-                            <span class="text-gray-600 text-sm md:text-base break-all">joshuavidalpupstudent@gmail.com</span>
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="font-semibold text-sm md:text-base block">Email</span>
+                                <span class="text-gray-600 text-sm md:text-base break-all">joshuavidalpupstudent@gmail.com</span>
+                            </div>
                         </div>
-                        <div class="flex flex-col sm:flex-row sm:items-center">
-                            <span class="font-semibold w-full sm:w-32 text-sm md:text-base">Phone:</span>
-                            <span class="text-gray-600 text-sm md:text-base">+63 961 702 9780</span>
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="font-semibold text-sm md:text-base block">Phone</span>
+                                <span class="text-gray-600 text-sm md:text-base">+63 961 702 9780</span>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="bg-white p-6 md:p-8 rounded-xl shadow-lg border border-gray-100 scroll-reveal-right">
-                    <h3 class="text-2xl font-bold text-primary mb-6">Skills</h3>
+                    <h3 class="text-2xl font-bold text-primary mb-6">Tech Stack</h3>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-4">
                         <div>
                             <h4 class="font-semibold text-gray-700 mb-3">Languages & Frameworks</h4>
                             <ul class="space-y-2">
                                 <li class="flex items-center gap-2 text-gray-600 text-sm md:text-base">
-                                    <span class="w-2 h-2 bg-accent rounded-full flex-shrink-0"></span>
+                                    <span class="w-6 h-6 bg-accent/10 rounded-md flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-3.5 h-3.5 text-accent" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                                    </span>
                                     PHP & Laravel
                                 </li>
                                 <li class="flex items-center gap-2 text-gray-600 text-sm md:text-base">
-                                    <span class="w-2 h-2 bg-accent rounded-full flex-shrink-0"></span>
+                                    <span class="w-6 h-6 bg-accent/10 rounded-md flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-3.5 h-3.5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+                                    </span>
                                     JavaScript & React.js
                                 </li>
                                 <li class="flex items-center gap-2 text-gray-600 text-sm md:text-base">
-                                    <span class="w-2 h-2 bg-accent rounded-full flex-shrink-0"></span>
+                                    <span class="w-6 h-6 bg-accent/10 rounded-md flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-3.5 h-3.5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/></svg>
+                                    </span>
                                     Tailwind CSS / Bootstrap
                                 </li>
                                 <li class="flex items-center gap-2 text-gray-600 text-sm md:text-base">
-                                    <span class="w-2 h-2 bg-accent rounded-full flex-shrink-0"></span>
+                                    <span class="w-6 h-6 bg-accent/10 rounded-md flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-3.5 h-3.5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                                    </span>
                                     C++ & Java
                                 </li>
                             </ul>
@@ -68,19 +98,27 @@
                             <h4 class="font-semibold text-gray-700 mb-3">Tools & Technologies</h4>
                             <ul class="space-y-2">
                                 <li class="flex items-center gap-2 text-gray-600 text-sm md:text-base">
-                                    <span class="w-2 h-2 bg-primary rounded-full flex-shrink-0"></span>
+                                    <span class="w-6 h-6 bg-primary/10 rounded-md flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-3.5 h-3.5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"/></svg>
+                                    </span>
                                     MySQL Database
                                 </li>
                                 <li class="flex items-center gap-2 text-gray-600 text-sm md:text-base">
-                                    <span class="w-2 h-2 bg-primary rounded-full flex-shrink-0"></span>
+                                    <span class="w-6 h-6 bg-primary/10 rounded-md flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-3.5 h-3.5 text-primary" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                                    </span>
                                     Git & GitHub
                                 </li>
                                 <li class="flex items-center gap-2 text-gray-600 text-sm md:text-base">
-                                    <span class="w-2 h-2 bg-primary rounded-full flex-shrink-0"></span>
+                                    <span class="w-6 h-6 bg-primary/10 rounded-md flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-3.5 h-3.5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                                    </span>
                                     VS Code
                                 </li>
                                 <li class="flex items-center gap-2 text-gray-600 text-sm md:text-base">
-                                    <span class="w-2 h-2 bg-primary rounded-full flex-shrink-0"></span>
+                                    <span class="w-6 h-6 bg-primary/10 rounded-md flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-3.5 h-3.5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"/></svg>
+                                    </span>
                                     Figma
                                 </li>
                             </ul>
