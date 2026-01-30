@@ -307,7 +307,7 @@
                         View Certificate
                     </button>
                     <!-- Mobile: Download Certificate -->
-                    <a href="{{ asset('documents/certificates/cert3.png') }}" download="GIT_IT_TOGETHER_Certificate.png" class="inline-flex md:hidden items-center gap-1.5 text-sm text-accent hover:text-primary transition-colors font-medium">
+                    <a href="{{ asset('documents/certificates/cert3.PNG') }}" download="GIT_IT_TOGETHER_Certificate.png" class="inline-flex md:hidden items-center gap-1.5 text-sm text-accent hover:text-primary transition-colors font-medium">
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
                         </svg>
@@ -327,7 +327,7 @@
                                     </button>
                                 </div>
                                 <div class="p-4 overflow-auto max-h-[calc(90vh-60px)] bg-gray-50">
-                                    <img src="{{ asset('documents/certificates/cert3.png') }}" alt="GIT IT TOGETHER Certificate" class="w-full h-auto rounded-lg shadow-lg">
+                                    <img src="{{ asset('documents/certificates/cert3.PNG') }}" alt="GIT IT TOGETHER Certificate" class="w-full h-auto rounded-lg shadow-lg">
                                 </div>
                             </div>
                         </div>
@@ -353,7 +353,7 @@
                         View Certificate
                     </button>
                     <!-- Mobile: Download Certificate -->
-                    <a href="{{ asset('documents/certificates/cert2.png') }}" download="LAUNCHPAD_Certificate.png" class="inline-flex md:hidden items-center gap-1.5 text-sm text-accent hover:text-primary transition-colors font-medium">
+                    <a href="{{ asset('documents/certificates/cert2.PNG') }}" download="LAUNCHPAD_Certificate.png" class="inline-flex md:hidden items-center gap-1.5 text-sm text-accent hover:text-primary transition-colors font-medium">
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
                         </svg>
@@ -373,7 +373,7 @@
                                     </button>
                                 </div>
                                 <div class="p-4 overflow-auto max-h-[calc(90vh-60px)] bg-gray-50">
-                                    <img src="{{ asset('documents/certificates/cert2.png') }}" alt="LAUNCHPAD Certificate" class="w-full h-auto rounded-lg shadow-lg">
+                                    <img src="{{ asset('documents/certificates/cert2.PNG') }}" alt="LAUNCHPAD Certificate" class="w-full h-auto rounded-lg shadow-lg">
                                 </div>
                             </div>
                         </div>
@@ -399,7 +399,7 @@
                         View Certificate
                     </button>
                     <!-- Mobile: Download Certificate -->
-                    <a href="{{ asset('documents/certificates/cert1.png') }}" download="Glass_Is_Kool_Certificate.png" class="inline-flex md:hidden items-center gap-1.5 text-sm text-accent hover:text-primary transition-colors font-medium">
+                    <a href="{{ asset('documents/certificates/cert1.PNG') }}" download="Glass_Is_Kool_Certificate.png" class="inline-flex md:hidden items-center gap-1.5 text-sm text-accent hover:text-primary transition-colors font-medium">
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
                         </svg>
@@ -419,7 +419,7 @@
                                     </button>
                                 </div>
                                 <div class="p-4 overflow-auto max-h-[calc(90vh-60px)] bg-gray-50">
-                                    <img src="{{ asset('documents/certificates/cert1.png') }}" alt="Glass-Is-Kool Certificate" class="w-full h-auto rounded-lg shadow-lg">
+                                    <img src="{{ asset('documents/certificates/cert1.PNG') }}" alt="Glass-Is-Kool Certificate" class="w-full h-auto rounded-lg shadow-lg">
                                 </div>
                             </div>
                         </div>
