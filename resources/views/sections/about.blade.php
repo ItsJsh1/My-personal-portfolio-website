@@ -313,23 +313,25 @@
                         </svg>
                         Download Certificate
                     </a>
-                    <!-- Modal -->
-                    <div x-show="showCert" x-cloak class="fixed inset-0 z-[100] flex items-center justify-center p-4" @keydown.escape.window="showCert = false">
-                        <div class="absolute inset-0 bg-black/70 backdrop-blur-sm" @click="showCert = false"></div>
-                        <div class="relative bg-white rounded-2xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-hidden" x-transition>
-                            <div class="flex items-center justify-between p-4 border-b">
-                                <h3 class="text-lg font-bold text-primary">GIT IT TOGETHER Certificate</h3>
-                                <button @click="showCert = false" class="p-2 hover:bg-gray-100 rounded-full transition-colors">
-                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                                    </svg>
-                                </button>
-                            </div>
-                            <div class="p-4 overflow-auto max-h-[75vh]">
-                                <img src="{{ asset('documents/certificates/cert3.png') }}" alt="GIT IT TOGETHER Certificate" class="w-full h-auto rounded-lg">
+                    <!-- Modal - Using Teleport approach with fixed positioning -->
+                    <template x-teleport="body">
+                        <div x-show="showCert" x-cloak class="fixed inset-0 z-[9999] flex items-center justify-center p-4" @keydown.escape.window="showCert = false">
+                            <div class="absolute inset-0 bg-black/70 backdrop-blur-sm" @click="showCert = false"></div>
+                            <div class="relative bg-white rounded-2xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-hidden z-[10000]" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 scale-95" x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-200" x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-95">
+                                <div class="flex items-center justify-between p-4 border-b bg-white sticky top-0">
+                                    <h3 class="text-lg font-bold text-primary">GIT IT TOGETHER Certificate</h3>
+                                    <button @click="showCert = false" class="p-2 hover:bg-gray-100 rounded-full transition-colors">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="p-4 overflow-auto max-h-[calc(90vh-60px)] bg-gray-50">
+                                    <img src="{{ asset('documents/certificates/cert3.png') }}" alt="GIT IT TOGETHER Certificate" class="w-full h-auto rounded-lg shadow-lg">
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </template>
                 </div>
                 <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 scroll-reveal-scale delay-400" x-data="{ showCert: false }">
                     <div class="flex items-center gap-3 mb-3">
@@ -357,23 +359,25 @@
                         </svg>
                         Download Certificate
                     </a>
-                    <!-- Modal -->
-                    <div x-show="showCert" x-cloak class="fixed inset-0 z-[100] flex items-center justify-center p-4" @keydown.escape.window="showCert = false">
-                        <div class="absolute inset-0 bg-black/70 backdrop-blur-sm" @click="showCert = false"></div>
-                        <div class="relative bg-white rounded-2xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-hidden" x-transition>
-                            <div class="flex items-center justify-between p-4 border-b">
-                                <h3 class="text-lg font-bold text-primary">LAUNCHPAD Certificate</h3>
-                                <button @click="showCert = false" class="p-2 hover:bg-gray-100 rounded-full transition-colors">
-                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                                    </svg>
-                                </button>
-                            </div>
-                            <div class="p-4 overflow-auto max-h-[75vh]">
-                                <img src="{{ asset('documents/certificates/cert2.png') }}" alt="LAUNCHPAD Certificate" class="w-full h-auto rounded-lg">
+                    <!-- Modal - Using Teleport approach with fixed positioning -->
+                    <template x-teleport="body">
+                        <div x-show="showCert" x-cloak class="fixed inset-0 z-[9999] flex items-center justify-center p-4" @keydown.escape.window="showCert = false">
+                            <div class="absolute inset-0 bg-black/70 backdrop-blur-sm" @click="showCert = false"></div>
+                            <div class="relative bg-white rounded-2xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-hidden z-[10000]" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 scale-95" x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-200" x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-95">
+                                <div class="flex items-center justify-between p-4 border-b bg-white sticky top-0">
+                                    <h3 class="text-lg font-bold text-primary">LAUNCHPAD Certificate</h3>
+                                    <button @click="showCert = false" class="p-2 hover:bg-gray-100 rounded-full transition-colors">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="p-4 overflow-auto max-h-[calc(90vh-60px)] bg-gray-50">
+                                    <img src="{{ asset('documents/certificates/cert2.png') }}" alt="LAUNCHPAD Certificate" class="w-full h-auto rounded-lg shadow-lg">
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </template>
                 </div>
                 <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 scroll-reveal-scale delay-500" x-data="{ showCert: false }">
                     <div class="flex items-center gap-3 mb-3">
@@ -401,23 +405,25 @@
                         </svg>
                         Download Certificate
                     </a>
-                    <!-- Modal -->
-                    <div x-show="showCert" x-cloak class="fixed inset-0 z-[100] flex items-center justify-center p-4" @keydown.escape.window="showCert = false">
-                        <div class="absolute inset-0 bg-black/70 backdrop-blur-sm" @click="showCert = false"></div>
-                        <div class="relative bg-white rounded-2xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-hidden" x-transition>
-                            <div class="flex items-center justify-between p-4 border-b">
-                                <h3 class="text-lg font-bold text-primary">Glass-Is-Kool Certificate</h3>
-                                <button @click="showCert = false" class="p-2 hover:bg-gray-100 rounded-full transition-colors">
-                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                                    </svg>
-                                </button>
-                            </div>
-                            <div class="p-4 overflow-auto max-h-[75vh]">
-                                <img src="{{ asset('documents/certificates/cert1.png') }}" alt="Glass-Is-Kool Certificate" class="w-full h-auto rounded-lg">
+                    <!-- Modal - Using Teleport approach with fixed positioning -->
+                    <template x-teleport="body">
+                        <div x-show="showCert" x-cloak class="fixed inset-0 z-[9999] flex items-center justify-center p-4" @keydown.escape.window="showCert = false">
+                            <div class="absolute inset-0 bg-black/70 backdrop-blur-sm" @click="showCert = false"></div>
+                            <div class="relative bg-white rounded-2xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-hidden z-[10000]" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 scale-95" x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-200" x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-95">
+                                <div class="flex items-center justify-between p-4 border-b bg-white sticky top-0">
+                                    <h3 class="text-lg font-bold text-primary">Glass-Is-Kool Certificate</h3>
+                                    <button @click="showCert = false" class="p-2 hover:bg-gray-100 rounded-full transition-colors">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="p-4 overflow-auto max-h-[calc(90vh-60px)] bg-gray-50">
+                                    <img src="{{ asset('documents/certificates/cert1.png') }}" alt="Glass-Is-Kool Certificate" class="w-full h-auto rounded-lg shadow-lg">
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </template>
                 </div>
             </div>
         </div>
