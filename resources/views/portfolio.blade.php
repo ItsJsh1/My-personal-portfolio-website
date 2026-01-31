@@ -329,25 +329,42 @@
             // ==========================================
             const privacyModal = document.getElementById('privacyModal');
             const acceptBtn = document.getElementById('acceptPrivacy');
+            let privacyAccepted = sessionStorage.getItem('privacyAccepted');
             
-            if (sessionStorage.getItem('privacyAccepted')) {
+            if (privacyAccepted) {
                 privacyModal.style.display = 'none';
                 privacyModal.style.pointerEvents = 'none';
+                privacyModal.style.visibility = 'hidden';
             } else {
+                // Keep modal visible and block scrolling until accepted
+                privacyModal.style.display = 'flex';
+                privacyModal.style.opacity = '1';
+                privacyModal.style.visibility = 'visible';
                 document.body.style.overflow = 'hidden';
             }
             
             acceptBtn.addEventListener('click', function() {
                 sessionStorage.setItem('privacyAccepted', 'true');
+                privacyAccepted = true;
                 privacyModal.style.opacity = '0';
                 privacyModal.style.transition = 'opacity 0.3s ease-out';
                 
                 setTimeout(() => {
                     privacyModal.style.display = 'none';
                     privacyModal.style.pointerEvents = 'none';
+                    privacyModal.style.visibility = 'hidden';
                     document.body.style.overflow = '';
                     // Trigger scroll reveal after modal closes
                     checkScrollReveal();
+                    // Navigate to hash if present
+                    if (window.location.hash) {
+                        const targetSection = document.querySelector(window.location.hash);
+                        if (targetSection) {
+                            setTimeout(() => {
+                                targetSection.scrollIntoView({ behavior: 'smooth' });
+                            }, 100);
+                        }
+                    }
                 }, 300);
             });
 
@@ -441,36 +458,77 @@
             
             function highlightActiveSection() {
                 const scrollY = window.scrollY;
+                const windowHeight = window.innerHeight;
+                const documentHeight = document.documentElement.scrollHeight;
+                
+                // Check if we're at the bottom of the page (for contact section)
+                const isAtBottom = scrollY + windowHeight >= documentHeight - 50;
+                
+                if (isAtBottom) {
+                    // If at bottom, highlight the last section (contact)
+                    const lastSection = sections[sections.length - 1];
+                    const lastSectionId = lastSection ? lastSection.getAttribute('id') : null;
+                    
+                    // Desktop nav links
+                    navLinks.forEach(link => {
+                        link.classList.remove('text-accent', 'font-semibold');
+                        link.classList.add('text-gray-700');
+                        
+                        if (link.getAttribute('data-section') === lastSectionId) {
+                            link.classList.remove('text-gray-700');
+                            link.classList.add('text-accent', 'font-semibold');
+                        }
+                    });
+                    
+                    // Mobile nav links
+                    mobileNavLinks.forEach(link => {
+                        link.classList.remove('text-accent', 'bg-accent/10');
+                        link.classList.add('text-gray-700');
+                        
+                        if (link.getAttribute('data-section') === lastSectionId) {
+                            link.classList.remove('text-gray-700');
+                            link.classList.add('text-accent', 'bg-accent/10');
+                        }
+                    });
+                    return;
+                }
+                
+                // Normal section detection
+                let currentSection = null;
                 
                 sections.forEach(section => {
-                    const sectionHeight = section.offsetHeight;
                     const sectionTop = section.offsetTop - 150;
+                    const sectionHeight = section.offsetHeight;
                     const sectionId = section.getAttribute('id');
                     
                     if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
-                        // Desktop nav links
-                        navLinks.forEach(link => {
-                            link.classList.remove('text-accent', 'font-semibold');
-                            link.classList.add('text-gray-700');
-                            
-                            if (link.getAttribute('data-section') === sectionId) {
-                                link.classList.remove('text-gray-700');
-                                link.classList.add('text-accent', 'font-semibold');
-                            }
-                        });
-                        
-                        // Mobile nav links
-                        mobileNavLinks.forEach(link => {
-                            link.classList.remove('text-accent', 'bg-accent/10');
-                            link.classList.add('text-gray-700');
-                            
-                            if (link.getAttribute('data-section') === sectionId) {
-                                link.classList.remove('text-gray-700');
-                                link.classList.add('text-accent', 'bg-accent/10');
-                            }
-                        });
+                        currentSection = sectionId;
                     }
                 });
+                
+                if (currentSection) {
+                    // Desktop nav links
+                    navLinks.forEach(link => {
+                        link.classList.remove('text-accent', 'font-semibold');
+                        link.classList.add('text-gray-700');
+                        
+                        if (link.getAttribute('data-section') === currentSection) {
+                            link.classList.remove('text-gray-700');
+                            link.classList.add('text-accent', 'font-semibold');
+                        }
+                    });
+                    
+                    // Mobile nav links
+                    mobileNavLinks.forEach(link => {
+                        link.classList.remove('text-accent', 'bg-accent/10');
+                        link.classList.add('text-gray-700');
+                        
+                        if (link.getAttribute('data-section') === currentSection) {
+                            link.classList.remove('text-gray-700');
+                            link.classList.add('text-accent', 'bg-accent/10');
+                        }
+                    });
+                }
             }
 
             // ==========================================
