@@ -64,6 +64,7 @@
             <!-- Email Button -->
             <div class="flex items-center justify-center scroll-reveal-right delay-300">
                 <a href="mailto:joshuavidalpupstudent@gmail.com?subject=OJT%20Opportunity" 
+                   onclick="handleEmailClick(event, 'joshuavidalpupstudent@gmail.com', 'OJT Opportunity')"
                    class="email-btn-animated inline-flex items-center gap-3 bg-accent text-white px-8 py-4 rounded-lg hover:bg-blue-600 transition duration-300 font-medium text-lg shadow-md relative overflow-hidden">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>

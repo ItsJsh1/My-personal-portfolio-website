@@ -277,6 +277,52 @@
     </footer>
 
     <script>
+        // ==========================================
+        // Email Handler with Gmail Fallback
+        // ==========================================
+        function handleEmailClick(event, email, subject) {
+            // Create mailto URL
+            const mailtoUrl = 'mailto:' + email + '?subject=' + encodeURIComponent(subject);
+            
+            // Try to detect if mailto will work
+            // On most desktop browsers without a mail client, we'll use Gmail as fallback
+            const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+            
+            if (isMobile) {
+                // On mobile, let the default mailto behavior work
+                return true;
+            }
+            
+            // On desktop, prevent default and try a more reliable approach
+            event.preventDefault();
+            
+            // Create a hidden iframe to test mailto (won't navigate away if it fails)
+            const testFrame = document.createElement('iframe');
+            testFrame.style.display = 'none';
+            document.body.appendChild(testFrame);
+            
+            // Set a timeout - if mailto works, the browser handles it
+            // If it doesn't work (no handler), we'll fall back to Gmail
+            const gmailUrl = 'https://mail.google.com/mail/?view=cm&fs=1&to=' + email + '&su=' + encodeURIComponent(subject);
+            
+            // Try mailto first
+            window.location.href = mailtoUrl;
+            
+            // After a short delay, if we're still here, offer Gmail option
+            setTimeout(() => {
+                document.body.removeChild(testFrame);
+                // Show a subtle prompt to use Gmail if mailto didn't work
+                if (document.hasFocus()) {
+                    // We're still on the page, so mailto might not have worked
+                    // Open Gmail compose as fallback
+                    const useGmail = confirm('No email app detected. Would you like to use Gmail instead?\n\nEmail: ' + email);
+                    if (useGmail) {
+                        window.open(gmailUrl, '_blank');
+                    }
+                }
+            }, 500);
+        }
+
         document.addEventListener('DOMContentLoaded', function() {
             // ==========================================
             // Privacy Modal
